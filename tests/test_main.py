@@ -6,4 +6,4 @@ client = TestClient(app)
 def test_read_root():
     response = client.get("/")
     assert response.status_code == 200
-    assert response.json() == {"mensaje": "Texto Erróneo Forzado", "estado": "Operativo"}
+    assert response.json() == {"mensaje": "Sistema de Inventario Activo", "estado": "Operativo"}
